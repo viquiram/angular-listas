@@ -1,0 +1,9 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let member of memberList">
+    <div class="pull-left">
+      <div (click)="editFNameOfMemberById(member.id)" class="memberFName">{{member.fname}}</div>
+      <div (click)="editLNameOfMemberById(member.id)" class="memberLName">{{member.lname}}</div>
+    </div>
+    <button (click)="removeMemberById(member.id)" class="pull-right btn btUOC btUOC-grey"><span class="glyphicon glyphicon-trash"></span> Remove</button>
+  </li>
+</ul>

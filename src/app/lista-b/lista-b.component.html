@@ -1,0 +1,9 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let member of memberList">
+    <app-lista-b-item [member]='member'
+                    (clickFName)='onEditFName($event)'
+                    (clickLName)='onEditLName($event)'
+                    (clickRemove)='onRemoveMember($event)'
+                    ></app-lista-b-item>
+  </li>
+</ul>

@@ -1,0 +1,9 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let member of memberList; let i=index">
+    <app-lista-c-item [member]='member'
+                    (clickFName)='editMemberFName(i)'
+                    (clickLName)='editMemberLName(i)'
+                    (clickRemove)='removeMember(i)'
+                    ></app-lista-c-item>
+  </li>
+</ul>
